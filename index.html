@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+<section class="section1">
+        <div class="navbar">
+            <div class="logo">
+                <img src="./amazon-png-logo-vector-6695.png" alt="logo">
+            </div>
+            <div class="address">
+                Hello <br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg>Select Your Address
+            </div>
+            <div>
+            <select class="select">
+                <option value="All">All</option>
+                <option value="Alexa Skills">Alexa Skills</option>
+                <option value="Amazon Devices">Amazon Devices</option>
+                <option value="Amazon Fashion">Amazon Fashion</option>
+                <option value="Amazon Fresh">Amazon Fresh</option>
+            </select>
+            <input class="search" type="search" placeholder="Search Amazon.in" id="searchicon">
+            <label for="searchicon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg></label>
+        </div>
+        <div class="language">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag-fill" viewBox="0 0 16 16">
+                <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001"/>
+              </svg>
+            <select>
+                <option value="En">En</option>
+                <option value="Hindi">Hindi</option>
+                <option value="English">English</option>
+                <option value="Punjabi">Punjabi</option>
+                <option value="Tamil">Tamil</option>
+                <option value="Arabic">Arabic</option>
+            </select>
+        </div>
+        <div class="account">
+            Hello,sign in <br>
+            <select>
+                <option value="Account & lists">Account & lists</option>
+                <option value="your account">Your Account</option>
+                <option value="your list">Your Lists</option>
+            </select>
+        </div>
+        <div class="return">
+            <a href="#">Return <br>& Orders</a>
+        </div>
+        <div class="cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg>Cart
+        </div>
+    </div>
+</section>
+<section class="section2">
+        <div class="select2">
+        <select class="bgselect">
+            <option value="All">ALL</option>
+            <option value="Trending">Trending</option>
+            <option value="Digital content">Digital content</option>
+        </select>
+        </div>
+        <div>
+           <a href="#">Amazon miniTv</a>
+           <a href="#">Sell</a>
+           <a href="#">Best Sellers</a>
+           <a href="#">Mobiles</a>
+           <a href="#">Today's Deals</a>
+           <a href="#">Customer Service</a>
+           <a href="#">New Releases</a>
+           <a href="#">Electronics</a>
+           <select class="bgselect">
+            <option value="#">Prime</option>
+            <option value="#">Prime Memeber</option>
+           </select>
+           <a href="#">Download APP</a>
+    </div>
+</section>
+<section>
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4" class="active" aria-current="true"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img src="./img.css/1stcrousal.png" alt="">
+          </div>
+
+          <div class="carousel-item">
+            <img src="./img.css/2nd crousal.png" alt="">
+          </div>
+
+          <div class="carousel-item">
+            <img src="./img.css/3rd crousal.png" alt="">
+          </div>
+
+          <div class="carousel-item active">
+            <img src="./img.css/4th crousal.png" alt="">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</section>
+<section>
+    <div class="container1">
+        <div class="item item1">
+            <div class="caption1"><h3> Shop & Pay | Earn rewards daily</h3></div>
+            <div class="item1 itema"></div>
+            <div class="item1 itemb"></div>
+            <div class="item1 itemc"></div>
+            <div class="item1 itemd"></div>
+        </div>
+        <div class="item item2">
+            <div class="caption2"><h3>Bluetooth Calling Smartwatch starts at..</h3></div>
+            <div class="item2a"></div>
+        </div>
+        <div class="item item3">
+            <div class="caption1"><h3>Starting ₹79 | Amazon brands & more</h3></div>
+            <div class="item3 itema"></div>
+            <div class="item3 itemb"></div>
+            <div class="item3 itemc"></div>
+            <div class="item3 itemd"></div>
+        </div>
+        <div class="item item4">
+            <div class="item4a">
+            <h3>Sign in for Best <br> Experience <br></h3>
+            <button>Sign in Securely</button>
+        </div>
+            <div class="item4b">
+            </div>
+        </div>
+        <div class="item item5">
+            <div class="caption2"><h3>Medicines | Up to 30% off 
+            </h3></div>
+            <div class="item5a"></div>
+        </div>
+        <div class="item item6">
+            <div class="caption1"><h3>Starting ₹189 | Amazon brands & more</h3></div>
+            <div class="item6 itema"></div>
+            <div class="item6 itemb"></div>
+            <div class="item6 itemc"></div>
+            <div class="item6 itemd"></div>
+        </div>
+        <div class="item item7">
+            <div class="caption2"><h3>Up to 70% off | Clearance store </h3></div>
+            <div class="item7a"></div>
+
+        </div>
+        <div class="item item8">
+            <div class="caption1"><h3>Appliances for your home | Up to 55% off</h3></div>
+            <div class="item8 itema"></div>
+            <div class="item8 itemb"></div>
+            <div class="item8 itemc"></div>
+            <div class="item8 itemd"></div>
+        </div>
+    </div>
+</section>
+<section class="section3">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Return & Orders</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Your Cart</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+          </ul>
+          <p class="text-center text-body-secondary">© 2023 Amazon.in</p>
+        </footer>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
